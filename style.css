@@ -14,12 +14,6 @@ p {
 
 /*Menus*/
 
-.m-contactMenu__landingPage {
-}
-
-.m-mainMenu__landingPage {
-}
-
 .m-scrollingMenu {
 }
 
@@ -33,20 +27,87 @@ section {
 /*Landing page*/
 
 #o-landingPage {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: repeat(14, 64px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Header landing*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+}
+
+/*Logo*/
+
+#logo__joellieSprumont {
+  padding: 2em;
+}
+
+/*Menu contact landing*/
+
+.m-contactMenu__landingPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#landing__ldIcon {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 2em;
+}
+
+#landing__contactBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  background-color: #ca2e55;
+  border-radius: 25px 25px 2px 25px;
+  height: 2em;
+  width: 6em;
+}
+
+#landing__contactBtn a {
+  font-weight: 600;
+  color: #ecfefe;
+  text-decoration: none;
+}
+
+/*Images left*/
+
+.o-landing__images {
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.m-landing__images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 #a-landing__photo {
-  width: 25%;
   z-index: 1;
+  width: 50%;
 }
 
 .a-colorBlock {
-  width: 258px;
-  height: 334px;
-  z-index: -1;
+  width: 25%;
+  height: 50%;
+  z-index: -2;
   background: linear-gradient(
     139.04deg,
     rgba(249, 203, 64, 0.45) -0.02%,
@@ -55,7 +116,13 @@ section {
   );
 }
 
+/*Presentation right*/
+
 .o-landing__presentation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  flex-direction: column;
 }
 
 p.presentation {
