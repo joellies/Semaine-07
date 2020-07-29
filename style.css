@@ -2,6 +2,7 @@
 
 body {
   width: 100%;
+  max-width: 1480px;
   height: 5400px;
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
   font-family: Montserrat, sans-serif;
@@ -12,15 +13,10 @@ p {
   font-size: 1.5vw;
 }
 
-/*Menus*/
-
-.m-scrollingMenu {
-}
-
 /*Main container*/
 
 section {
-  height: 900px;
+  max-height: 900px;
   border: solid 1px black;
 }
 
@@ -40,13 +36,14 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  height: 15%;
+  height: 10%;
 }
 
 /*Logo*/
 
 #logo__joellieSprumont {
-  padding: 2em;
+  padding: 2vw;
+  width: 4vw;
 }
 
 /*Menu contact landing*/
@@ -63,57 +60,102 @@ header {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin: 2em;
+  margin: 2vw;
+  width: 1.5vw;
 }
 
 #landing__contactBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2em;
+  margin: 2vw;
   background-color: #ca2e55;
-  border-radius: 25px 25px 2px 25px;
-  height: 2em;
-  width: 6em;
+  border-radius: 25vw 25vw 2vw 25vw;
+  height: 2vw;
+  width: 8vw;
 }
 
 #landing__contactBtn a {
+  font-size: 1.1vw;
   font-weight: 600;
-  color: #ecfefe;
+  color: white;
   text-decoration: none;
+}
+
+#landing__contactBtn:hover {
+  background: linear-gradient(
+    140deg,
+    rgba(202, 46, 85, 0.45) 0%,
+    rgba(1, 103, 107, 0.76) 100%
+  );
+  transition-duration: 0.8s;
+}
+
+.o-landingContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Aside menu landing*/
+
+.aside__landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  margin-left: -10vw;
+  transform: rotate(-90deg);
+  position: fixed;
+  margin-top: 15vw;
+}
+
+.aside__landing div {
+  width: 5.1vw;
+}
+
+.aside__landing a {
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: #01676b;
+  font-weight: 600;
+}
+
+.aside__landing a:hover {
+  color: #ca2e55;
+  transition-duration: 0.8s;
 }
 
 /*Images left*/
 
 .o-landing__images {
-  display: flex;
-  width: 50%;
-  height: auto;
-}
-
-.m-landing__images {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  display: grid;
+  grid-template-columns: 0.2fr 0.1fr 1.5fr 0.4fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+  width: 40%;
+  margin-left: 9vw;
 }
 
 #a-landing__photo {
   z-index: 1;
-  width: 50%;
+  width: 70%;
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
 
 .a-colorBlock {
-  width: 25%;
-  height: 50%;
+  grid-column: 2/4;
+  grid-row: 2/4;
   z-index: -2;
   background: linear-gradient(
-    139.04deg,
+    140deg,
     rgba(249, 203, 64, 0.45) -0.02%,
     rgba(202, 46, 85, 0.45) 52.55%,
     rgba(1, 103, 107, 0.76) 105.12%
   );
+  height: 80%;
+  width: 58%;
+  margin-top: 15%;
 }
 
 /*Presentation right*/
@@ -121,12 +163,26 @@ header {
 .o-landing__presentation {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 50%;
   flex-direction: column;
+  margin-left: -5vw;
 }
 
-p.presentation {
-  font-size: 6vw;
+.hi {
+  font-size: 4vw;
+  padding: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.presentation {
+  font-size: 4vw;
+  padding: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .blueBold {
@@ -135,8 +191,41 @@ p.presentation {
 }
 
 p.chapo {
-  font-size: 2vw;
-  font-weight: 500;
+  font-size: 1.5vw;
+  font-weight: 400;
+  max-width: 70%;
+  padding: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+/*Button*/
+
+.checkoutBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1vw;
+  background-color: #ca2e55;
+  border-radius: 25px 25px 2px 25px;
+  height: 4vw;
+  width: 20vw;
+}
+
+.checkoutBtn a {
+  font-weight: 600;
+  font-size: 1.3vw;
+  color: #ecfefe;
+  text-decoration: none;
+}
+
+.checkoutBtn:hover {
+  background: linear-gradient(
+    140deg,
+    rgba(202, 46, 85, 0.45) 0%,
+    rgba(1, 103, 107, 0.76) 100%
+  );
+  transition-duration: 0.8s;
 }
 
 /*Profile*/
