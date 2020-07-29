@@ -1,0 +1,89 @@
+/*Général*/
+
+body {
+  width: 100%;
+  height: 5400px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
+  font-family: Montserrat, sans-serif;
+}
+
+p {
+  color: #0c2829;
+  font-size: 1.5vw;
+}
+
+/*Menus*/
+
+.m-contactMenu__landingPage {
+}
+
+.m-mainMenu__landingPage {
+}
+
+.m-scrollingMenu {
+}
+
+/*Main container*/
+
+section {
+  height: 900px;
+  border: solid 1px black;
+}
+
+/*Landing page*/
+
+#o-landingPage {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(14, 64px);
+}
+
+#a-landing__photo {
+  width: 25%;
+  z-index: 1;
+}
+
+.a-colorBlock {
+  width: 258px;
+  height: 334px;
+  z-index: -1;
+  background: linear-gradient(
+    139.04deg,
+    rgba(249, 203, 64, 0.45) -0.02%,
+    rgba(202, 46, 85, 0.45) 52.55%,
+    rgba(1, 103, 107, 0.76) 105.12%
+  );
+}
+
+.o-landing__presentation {
+}
+
+p.presentation {
+  font-size: 6vw;
+}
+
+.blueBold {
+  color: #01676b;
+  font-weight: 600;
+}
+
+p.chapo {
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+/*Profile*/
+
+/*Skills*/
+
+/*Soft skills*/
+
+/*Projects*/
+
+/*Contact*/
+
+/*Footer*/
+
+footer {
+  height: 4%;
+}
