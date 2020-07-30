@@ -6,6 +6,7 @@ body {
   height: 5400px;
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
   font-family: Montserrat, sans-serif;
+  color: #0c2829;
 }
 
 h1,
@@ -20,6 +21,10 @@ h1 {
   font-size: 3.5vw;
 }
 
+h2 {
+  font-size: 3vw;
+}
+
 p {
   color: #0c2829;
   font-size: 1.5vw;
@@ -28,7 +33,6 @@ p {
 /*Main container*/
 
 section {
-  max-height: 900px;
   border: solid 1px black;
 }
 
@@ -60,6 +64,7 @@ header {
 /*Logo*/
 
 #logo__joellieSprumont {
+  margin-left: 5vw;
   padding: 2vw;
   width: 4vw;
 }
@@ -130,7 +135,7 @@ header {
   transform: rotate(-90deg);
   position: fixed;
   margin-top: 30vw;
-  width: 10%;
+  width: 7%;
 }
 
 .aside__landing div {
@@ -155,7 +160,7 @@ header {
   display: grid;
   grid-template-columns: 0.2fr 0.1fr 1.5fr 0.4fr;
   grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
-  width: 40%;
+  width: 45%;
   margin-left: 9vw;
 }
 
@@ -251,11 +256,100 @@ h2.chapo {
 
 /*Profile*/
 
-.o-profile {
-  width: 90%;
-}
+/*Container*/
 
 .o-profileContainer {
+  width: 100%;
+  margin-left: 5%;
+}
+
+/*Titres*/
+
+.m-profileIntro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 8vw;
+  margin-top: 10vw;
+  margin-bottom: 8vw;
+}
+
+.profileTitle h2 {
+  font-size: 3.5vw;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.profileSubtitle p {
+  font-size: 1.5vw;
+  margin-bottom: 0vw;
+}
+
+/*Textes*/
+
+.o-profileTexts {
+  display: grid;
+  grid-template-columns: repeat(3, 2.2fr 0.8fr);
+  grid-template-rows: repeat(2, 0.7fr) 1.3fr repeat(2, 0.7fr) 1.4fr repeat(
+      2,
+      0.7fr
+    );
+  gap: 1px 1px;
+  margin-left: 8vw;
+}
+
+.m-profile__one {
+  grid-area: 1 / 1 / 4 / 2;
+  height: 20vw;
+}
+
+.m-profile__two {
+  grid-area: 5 / 1 / 9 / 2;
+  height: 27vw;
+}
+
+.m-profile__three {
+  grid-area: 2 / 3 / 5 / 4;
+  height: 15vw;
+}
+
+.m-profile__four {
+  grid-area: 5 / 3 / 9 / 4;
+  height: 15vw;
+}
+
+.m-profile__five {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 1px 1px;
+  grid-area: 3 / 5 / 6 / 6;
+}
+
+.a-learn {
+  text-align: right;
+  font-size: 3.5vw;
+  font-weight: 500;
+  height: 13.5vw;
+}
+
+.hightlight {
+  margin-left: 10vw;
+  text-align: center;
+  font-size: 3.5vw;
+  font-weight: 500;
+  color: #0c2829;
+  background: linear-gradient(
+    166.76deg,
+    rgba(249, 203, 64, 0.6) 0%,
+    rgba(202, 46, 85, 0.456) 41.15%,
+    rgba(1, 103, 107, 0.486) 100%
+  );
+  width: 12vw;
+  height: 4.5vw;
+  transform: matrix(1, -0.02, 0, 1, 0, 0);
 }
 
 /*Skills*/
