@@ -70,7 +70,7 @@ header {
 
 /*Menu contact landing*/
 
-.m-contactMenu__landingPage {
+.m-contactMenu__landing {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -120,7 +120,7 @@ header {
 }
 
 .landing__contactBtn.transparent {
-  background-color: #efbdcf;
+  opacity: -0.5;
   color: rgba(1, 103, 107, 0.76);
 }
 
@@ -150,7 +150,7 @@ header {
 
 .aside__landing a:hover {
   color: #ca2e55;
-  transition-duration: 0.8s;
+  transition-duration: 1s;
 }
 
 /*Images left*/
@@ -183,6 +183,16 @@ header {
   height: 80%;
   width: 58%;
   margin-top: 15%;
+}
+
+#a-landing__photo:hover {
+  background: linear-gradient(
+    140deg,
+    rgba(1, 103, 107, 0.76) -0.02%,
+    rgba(202, 46, 85, 0.45) 52.55%,
+    rgba(249, 203, 64, 0.45) 105.12%
+  );
+  transition: 1s;
 }
 
 /*Presentation right*/
@@ -250,7 +260,7 @@ h2.chapo {
     rgba(202, 46, 85, 0.45) 0%,
     rgba(1, 103, 107, 0.76) 100%
   );
-  transition-duration: 0.8s;
+  transition-duration: 1s;
 }
 
 /*Profile*/
@@ -270,8 +280,8 @@ h2.chapo {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 8vw;
-  margin-top: 10vw;
-  margin-bottom: 8vw;
+  margin-top: 8vw;
+  margin-bottom: 5vw;
 }
 
 .profileTitle h2 {
@@ -325,6 +335,7 @@ h2.chapo {
   grid-template-rows: 1.5fr 0.5fr;
   gap: 1px 1px;
   grid-area: 3 / 5 / 6 / 6;
+  height: 20vw;
 }
 
 .a-learn {
@@ -351,8 +362,117 @@ h2.chapo {
   transform: matrix(1, -0.02, 0, 1, 0, 0);
 }
 
+.hightlight:hover {
+  background: linear-gradient(
+    166.76deg,
+    rgba(1, 103, 107, 0.486) 0%,
+    rgba(202, 46, 85, 0.456) 41.15%,
+    rgba(249, 203, 64, 0.6) 100%
+  );
+}
+
 /*Skills*/
 
+/*Titres*/
+
+.o-skillsContainer {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.m-skillsIntro {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 8vw;
+  margin-bottom: 5vw;
+  margin-left: -8vw;
+}
+
+.skillsTitle h2 {
+  font-size: 3.5vw;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.skillsSubtitle p {
+  font-size: 1.5vw;
+  margin-bottom: 0vw;
+  text-align: right;
+}
+
+/*Blocs de textes*/
+
+.o-skillsTexts {
+  display: grid;
+  grid-template-columns: 2.2fr 0.8fr 2.2fr 0.8fr 2.2fr 0.8fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  margin-left: 8vw;
+}
+
+.o-copyBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.7fr 1.6fr;
+  gap: 1px 1px;
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.a-copyIcon {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.a-copyTitle {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.a-copyDescription {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.o-webdesignBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.7fr 1.6fr;
+  gap: 1px 1px;
+  grid-area: 2 / 3 / 5 / 4;
+}
+
+.a-webdesignIcon {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.a-webdesignTitle {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.a-webdesignDescription {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.o-webdevBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.7fr 0.7fr 1.6fr;
+  gap: 1px 1px;
+  grid-area: 3 / 5 / 6 / 6;
+}
+
+.a-webdevIcon {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.a-webdevTitle {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.a-webdev-Description {
+  grid-area: 3 / 1 / 4 / 2;
+}
 /*Soft skills*/
 
 /*Projects*/
