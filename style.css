@@ -31,7 +31,7 @@ h3 {
 }
 p {
   color: #0c2829;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   line-height: 140%;
 }
 
@@ -419,7 +419,7 @@ h2.chapo {
 .o-skills__texts {
   display: grid;
   grid-template-columns: 2.3fr 0.5fr 2.3fr 0.5fr 2.3fr 0.6fr;
-  grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.35fr;
   gap: 1px 1px;
   margin-left: 8vw;
 }
@@ -435,7 +435,7 @@ h2.chapo {
   background-color: white;
   border-radius: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 1vw;
+  padding: 1.2vw;
 }
 
 .a-copy__icon {
@@ -451,6 +451,9 @@ h2.chapo {
 .a-copy__description {
   grid-area: 3 / 1 / 4 / 2;
   align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1.1vw;
 }
 
 .o-webdesign__block {
@@ -477,6 +480,8 @@ h2.chapo {
 
 .a-webdesign__description {
   grid-area: 3 / 1 / 4 / 2;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .o-webdev__block {
@@ -503,6 +508,8 @@ h2.chapo {
 
 .a-webdev__description {
   grid-area: 3 / 1 / 4 / 2;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 /*Soft skills*/
 
@@ -559,7 +566,7 @@ h2.chapo {
 .m-curiosityBubble {
   z-index: -3;
   position: absolute;
-  top: 255vw;
+  top: 250vw;
   left: 56vw;
 }
 
@@ -599,7 +606,20 @@ h2.chapo {
   left: 3vw;
 }
 
+.m-empathyBuble {
+  z-index: -3;
+  position: absolute;
+  top: 271vw;
+  left: 56vw;
+}
 
+.m-empathyBuble h3 {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  top: -10vw;
+  left: 2.5vw;
+}
 
 /*Projects*/
 
