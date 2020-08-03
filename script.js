@@ -1,8 +1,9 @@
-let changeBackground = window.onscroll ( => {
-  if (window.scrollTop() > 100) {
-    '.landing__contactBtn'.addClass('transparent');
+let element = document.getElementById('m-contactMenu__landing');
+
+let changeBackground = window.addEventListener('scroll', () => {
+  if (window.scrollTop > 150) {
+    element.classList.add('transparent');
   } else {
-    '.landing__contactBtn'.removeClass('transparent');
+    element.classList.remove('transparent');
   }
 });
-

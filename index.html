@@ -15,20 +15,20 @@
   </head>
   <body>
     <aside class="aside__landing">
-      <div class="aside__home">
-        <a href="#o-landingPage">home</a>
-      </div>
-      <div class="aside__profile">
-        <a href="#o-profile">profile</a>
-      </div>
-      <div class="aside__skils">
-        <a href="#o-skills">skills</a>
+      <div class="aside__projects">
+        <a href="#o-projects">projects</a>
       </div>
       <div class="aside__softSkills">
         <a href="#o-softSkills">soft skills</a>
       </div>
-      <div class="aside__projects">
-        <a href="#o-projects">projects</a>
+      <div class="aside__skils">
+        <a href="#o-skills">skills</a>
+      </div>
+      <div class="aside__profile">
+        <a href="#o-profile">profile</a>
+      </div>
+      <div class="aside__home">
+        <a href="#o-landingPage">home</a>
       </div>
     </aside>
     <div class="o-mainContainer">
@@ -38,7 +38,7 @@
           src="images/Logo-Joellie-Sprumont.svg"
           width="70px"
         />
-        <nav class="m-contactMenu__landing">
+        <nav id="m-contactMenu__landing">
           <a
             class="landing__ldIcon"
             href="https://www.linkedin.com/in/joelliesprumont/"
@@ -212,9 +212,37 @@
           </div>
        </div>
       </section>
-      <section id="o-projects"></section>
+      <section id="o-projects">
+        <div class="o-projects__container">
+          <div class="m-projects__intro">
+            <div class="projects__subtitle">
+              <p>some of my creative stuffs</p>
+            </div>
+            <div class="projects__title">
+              <h2>PROJECTS</h2>
+            </div>
+          </div>
+          <div class="o-projects__block">
+            <div class="m-projectOne">
+              <img src="images/project-one.png" alt="project one for Soundwave, fake Spotify" class="projectOne">
+              <div class="projectOne__hover">
+                <div class="projectOne_btn"><a href="/projects.html">Project 1</a></div>
+              </div>
+            </div>
+            <div class="m-projectTwo">
+                <img src="images/project-two.jpg" alt="project two" class="projectTwo" width="600">
+                <div class="hover">
+                  <div class="projectTwo_btn"><a href="/projects.html">Project 2</a></div>
+                </div>
+            </div>
+            </div>
+            <div class="m-projectThree">
+            <a href="/projects.html"><img src="/images/project-three-example.jpg" alt="project three" width="600"></a>
+          </div>
+          </div>
+      </section>
       <section id="o-contact"></section>
     </div>
   </body>
-  <script href="script.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
 </html>

@@ -1,9 +1,14 @@
 /*Général*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   max-width: 1480px;
-  height: 5400px;
+  height: 6400px;
+  top: 0;
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
   font-family: Montserrat, sans-serif;
   color: #0c2829;
@@ -75,7 +80,7 @@ header {
 
 /*Menu contact landing*/
 
-.m-contactMenu__landing {
+#m-contactMenu__landing {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -83,6 +88,7 @@ header {
   flex-wrap: wrap;
   position: fixed;
   width: 98vw;
+  z-index: -10;
 }
 
 .landing__ldIcon {
@@ -104,10 +110,6 @@ header {
   width: 8vw;
 }
 
-.blue {
-  background-color: blue;
-}
-
 .landing__contactBtn a {
   font-size: 1.1vw;
   font-weight: 600;
@@ -121,12 +123,12 @@ header {
     rgba(202, 46, 85, 0.45) 0%,
     rgba(1, 103, 107, 0.76) 100%
   );
-  transition-duration: 0.8s;
+  transition-duration: 1s;
 }
 
-.landing__contactBtn.transparent {
-  opacity: -0.5;
-  color: rgba(1, 103, 107, 0.76);
+.transparent {
+  opacity: 0.1;
+  z-index: -10;
 }
 
 /*Aside menu landing*/
@@ -138,7 +140,7 @@ header {
   gap: 1px 1px;
   transform: rotate(-90deg);
   position: fixed;
-  margin-top: 41vw;
+  margin-top: 40vw;
   width: 5%;
   justify-items: center;
   align-items: center;
@@ -277,7 +279,7 @@ h2.chapo {
 
 .o-profileContainer {
   width: 100%;
-  margin-left: 3%;
+  margin-left: 2%;
 }
 
 /*Titres*/
@@ -287,7 +289,7 @@ h2.chapo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 8vw;
+  margin-left: 7vw;
   margin-top: 8vw;
   margin-bottom: 5vw;
 }
@@ -314,7 +316,7 @@ h2.chapo {
       0.7fr
     );
   gap: 1px 1px;
-  margin-left: 8vw;
+  margin-left: 7vw;
 }
 
 .m-profile__one {
@@ -369,6 +371,7 @@ h2.chapo {
   height: 4.5vw;
   transform: matrix(1, -0.02, 0, 1, 0, 0);
   margin-top: 2.1vw;
+  transition: 1s;
 }
 
 .hightlight:hover {
@@ -386,7 +389,7 @@ h2.chapo {
 
 .o-skills__container {
   width: 100%;
-  margin-left: 3%;
+  margin-left: 2%;
   margin-right: 3%;
 }
 
@@ -418,7 +421,7 @@ h2.chapo {
 
 .o-skills__texts {
   display: grid;
-  grid-template-columns: 2.3fr 0.5fr 2.3fr 0.5fr 2.3fr 0.6fr;
+  grid-template-columns: 2.4fr 0.3fr 2.4fr 0.3fr 2.4fr 0.5fr;
   grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.35fr;
   gap: 1px 1px;
   margin-left: 8vw;
@@ -434,7 +437,8 @@ h2.chapo {
   align-items: center;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.025),
+    0 15px 40px rgba(166, 173, 201, 0.2);
   padding: 1.2vw;
 }
 
@@ -465,7 +469,8 @@ h2.chapo {
   justify-items: center;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.025),
+    0 15px 40px rgba(166, 173, 201, 0.2);
   padding: 1vw;
 }
 
@@ -493,7 +498,8 @@ h2.chapo {
   justify-items: center;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.025),
+    0 15px 40px rgba(166, 173, 201, 0.2);
   padding: 1vw;
 }
 
@@ -546,6 +552,7 @@ h2.chapo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  z-index: -3;
 }
 
 /*Image left*/
@@ -561,6 +568,7 @@ h2.chapo {
 .o-softSkills__bubbles {
   width: 50%;
   margin-left: 15vw;
+  z-index: -4;
 }
 
 .m-curiosityBubble {
@@ -622,6 +630,162 @@ h2.chapo {
 }
 
 /*Projects*/
+
+/*Container*/
+
+.o-projects__container {
+  width: 100%;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 12vw;
+}
+
+/*Titres*/
+
+.m-projects__intro {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5vw;
+  margin-left: -8vw;
+}
+
+.projects__title h2 {
+  font-size: 3.5vw;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.projects__subtitle p {
+  font-size: 1.5vw;
+  margin-bottom: 0vw;
+  text-align: right;
+}
+
+/*Block 3 projects */
+
+.o-projects__block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  width: 85%;
+}
+
+.o-projects__block div {
+  margin-top: 5vw;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.025),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.o-projects__block img {
+  border-radius: 25px 25px 25px 25px;
+}
+
+/*Project one*/
+
+.m-projectOne {
+  width: 600px;
+  height: 385px;
+  background: linear-gradient(
+    140deg,
+    rgba(249, 203, 64, 0.45) -0.02%,
+    rgba(202, 46, 85, 0.45) 52.55%,
+    rgba(1, 103, 107, 0.76) 105.12%
+  );
+}
+
+.projectOne {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+
+.m-projectOne:hover .projectOne {
+  opacity: 0.2;
+}
+
+.m-projectOne:hover .hover {
+  opacity: 1;
+}
+
+.projectOne_btn a {
+  position: relative;
+  top: -19vw;
+  left: 14vw;
+  color: white;
+  font-size: 1.2vw;
+  padding: 1vw;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 2vw;
+  background-color: #ca2e55;
+  border-radius: 25px 25px 2px 25px;
+  height: 1vw;
+  width: 8vw;
+}
+
+/*Project two*/
+
+.m-projectTwo {
+  width: 600px;
+  height: 385px;
+  background: linear-gradient(
+    140deg,
+    rgba(249, 203, 64, 0.45) -0.02%,
+    rgba(202, 46, 85, 0.45) 52.55%,
+    rgba(1, 103, 107, 0.76) 105.12%
+  );
+}
+.projectTwo {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+
+.hover {
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.m-projectTwo:hover .projectTwo {
+  opacity: 0.2;
+}
+
+.m-projectTwo:hover .hover {
+  opacity: 1;
+}
+
+.projectTwo_btn {
+}
+
+.projectTwo_btn a {
+  position: relative;
+  top: -19vw;
+  left: 14vw;
+  color: white;
+  font-size: 1.2vw;
+  padding: 1vw;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 2vw;
+  background-color: #ca2e55;
+  border-radius: 25px 25px 2px 25px;
+  height: 1vw;
+  width: 8vw;
+}
 
 /*Contact*/
 
