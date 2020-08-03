@@ -717,7 +717,7 @@ h2.chapo {
   opacity: 1;
 }
 
-.projectOne_btn a {
+.projectOne__btn a {
   position: relative;
   top: -19vw;
   left: 14vw;
@@ -767,10 +767,58 @@ h2.chapo {
   opacity: 1;
 }
 
-.projectTwo_btn {
+.projectTwo__btn a {
+  position: relative;
+  top: -19vw;
+  left: 14vw;
+  color: white;
+  font-size: 1.2vw;
+  padding: 1vw;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 2vw;
+  background-color: #ca2e55;
+  border-radius: 25px 25px 2px 25px;
+  height: 1vw;
+  width: 8vw;
 }
 
-.projectTwo_btn a {
+/*Project three*/
+
+.m-projectThree {
+  width: 600px;
+  height: 385px;
+
+  background: linear-gradient(
+    140deg,
+    rgba(249, 203, 64, 0.45) -0.02%,
+    rgba(202, 46, 85, 0.45) 52.55%,
+    rgba(1, 103, 107, 0.76) 105.12%
+  );
+}
+.projectThree {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 1s ease;
+  backface-visibility: hidden;
+}
+
+.projectThree__hover {
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.m-projectThree:hover .projectThree {
+  opacity: 0.2;
+}
+
+.m-projectThree:hover .projectThree__hover {
+  opacity: 1;
+}
+
+.projectThree__btn a {
   position: relative;
   top: -19vw;
   left: 14vw;
