@@ -1,7 +1,7 @@
-let element = document.getElementById('m-contactMenu__landing');
+let element = document.getElementById('m-landing__contactBtn');
 
 let changeBackground = window.addEventListener('scroll', () => {
-  if (window.scrollTop > 150) {
+  if (window.scrollY > 150) {
     element.classList.add('transparent');
   } else {
     element.classList.remove('transparent');

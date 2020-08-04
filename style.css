@@ -36,7 +36,7 @@ h3 {
 }
 p {
   color: #0c2829;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   line-height: 140%;
 }
 
@@ -126,8 +126,8 @@ header {
   transition-duration: 1s;
 }
 
-.transparent {
-  opacity: 0.1;
+.landing__contactBtn.transparent {
+  background-color: blue;
   z-index: -10;
 }
 
@@ -236,7 +236,7 @@ h1.presentation {
 }
 
 h2.chapo {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-weight: 400;
   max-width: 70%;
   padding: 1vw;
@@ -260,7 +260,7 @@ h2.chapo {
 .checkoutBtn a {
   font-weight: 600;
   font-size: 1.3vw;
-  color: #ecfefe;
+  color: white;
   text-decoration: none;
 }
 
@@ -280,6 +280,8 @@ h2.chapo {
 .o-profileContainer {
   width: 100%;
   margin-left: 2%;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
 }
 
 /*Titres*/
@@ -290,7 +292,7 @@ h2.chapo {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 7vw;
-  margin-top: 8vw;
+
   margin-bottom: 5vw;
 }
 
@@ -311,21 +313,18 @@ h2.chapo {
 .o-profileTexts {
   display: grid;
   grid-template-columns: repeat(3, 2.2fr 0.8fr);
-  grid-template-rows: repeat(2, 0.7fr) 0.7fr repeat(2, 0.5fr) 1fr repeat(
-      2,
-      0.7fr
-    );
+  grid-template-rows: repeat(2, 0.5fr) 0.5fr repeat(2, 0.5fr);
   gap: 1px 1px;
   margin-left: 7vw;
 }
 
 .m-profile__one {
-  grid-area: 1 / 1 / 4 / 2;
+  grid-area: 1 / 1 / 3 / 2;
   height: 20vw;
 }
 
 .m-profile__two {
-  grid-area: 5 / 1 / 9 / 2;
+  grid-area: 3 / 1 / 5 / 2;
   height: 25vw;
 }
 
@@ -335,7 +334,7 @@ h2.chapo {
 }
 
 .m-profile__four {
-  grid-area: 5 / 3 / 9 / 4;
+  grid-area: 4 / 3 / 5 / 4;
   height: 15vw;
 }
 
@@ -344,7 +343,7 @@ h2.chapo {
   grid-template-columns: 1fr;
   grid-template-rows: 1.5fr 0.5fr;
   gap: 1px 1px;
-  grid-area: 3 / 5 / 6 / 6;
+  grid-area: 2 / 5 / 5 / 5;
   height: 20vw;
 }
 
@@ -371,7 +370,6 @@ h2.chapo {
   height: 4.5vw;
   transform: matrix(1, -0.02, 0, 1, 0, 0);
   margin-top: 2.1vw;
-  transition: 1s;
 }
 
 .hightlight:hover {
@@ -381,6 +379,7 @@ h2.chapo {
     rgba(202, 46, 85, 0.456) 41.15%,
     rgba(249, 203, 64, 0.6) 100%
   );
+  transition: 0.8s;
 }
 
 /*Skills*/
@@ -391,6 +390,8 @@ h2.chapo {
   width: 100%;
   margin-left: 2%;
   margin-right: 3%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .m-skills__intro {
@@ -398,7 +399,6 @@ h2.chapo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 8vw;
   margin-bottom: 5vw;
   margin-left: -8vw;
 }
@@ -422,7 +422,7 @@ h2.chapo {
 .o-skills__texts {
   display: grid;
   grid-template-columns: 2.4fr 0.3fr 2.4fr 0.3fr 2.4fr 0.5fr;
-  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.35fr;
+  grid-template-rows: 0.3fr 0.3fr 0.35fr 0.25fr 0.3fr;
   gap: 1px 1px;
   margin-left: 8vw;
 }
@@ -522,6 +522,8 @@ h2.chapo {
 .o-softSkills__container {
   width: 100%;
   margin-left: 3%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .m-softSkills__intro {
@@ -530,7 +532,6 @@ h2.chapo {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 8vw;
-  margin-top: 8vw;
   margin-bottom: 5vw;
 }
 
@@ -574,7 +575,7 @@ h2.chapo {
 .m-curiosityBubble {
   z-index: -3;
   position: absolute;
-  top: 250vw;
+  top: 220vw;
   left: 56vw;
 }
 
@@ -587,7 +588,7 @@ h2.chapo {
 .m-senseResponsabilityBuble {
   z-index: -3;
   position: absolute;
-  top: 260vw;
+  top: 230vw;
   left: 78vw;
 }
 
@@ -602,7 +603,7 @@ h2.chapo {
 .m-activeListeningBubble {
   z-index: -3;
   position: absolute;
-  top: 280vw;
+  top: 250vw;
   left: 75vw;
 }
 
@@ -617,7 +618,7 @@ h2.chapo {
 .m-empathyBuble {
   z-index: -3;
   position: absolute;
-  top: 271vw;
+  top: 240vw;
   left: 56vw;
 }
 
@@ -637,7 +638,7 @@ h2.chapo {
   width: 100%;
   margin-left: 3%;
   margin-right: 2%;
-  margin-top: 12vw;
+  margin-top: 8vw;
 }
 
 /*Titres*/
@@ -692,7 +693,7 @@ h2.chapo {
 
 .m-projectOne {
   width: 600px;
-  height: 385px;
+  height: 370px;
   background: linear-gradient(
     140deg,
     rgba(249, 203, 64, 0.45) -0.02%,
@@ -738,7 +739,7 @@ h2.chapo {
 
 .m-projectTwo {
   width: 600px;
-  height: 385px;
+  height: 370px;
   background: linear-gradient(
     140deg,
     rgba(249, 203, 64, 0.45) -0.02%,
@@ -746,6 +747,12 @@ h2.chapo {
     rgba(1, 103, 107, 0.76) 105.12%
   );
 }
+
+.m-projectTwo img {
+  width: 600px;
+  height: 370px;
+}
+
 .projectTwo {
   opacity: 1;
   width: 100%;
@@ -788,7 +795,7 @@ h2.chapo {
 
 .m-projectThree {
   width: 600px;
-  height: 385px;
+  height: 370px;
 
   background: linear-gradient(
     140deg,
@@ -820,7 +827,7 @@ h2.chapo {
 
 .projectThree__btn a {
   position: relative;
-  top: -19vw;
+  top: -18.5vw;
   left: 14vw;
   color: white;
   font-size: 1.2vw;
@@ -834,6 +841,30 @@ h2.chapo {
   height: 1vw;
   width: 8vw;
 }
+
+/*Page project.html*/
+
+/*Menu aside home*/
+
+.aside__project {
+  position: fixed;
+  transform: rotate(-90deg);
+  margin-top: 22vw;
+  width: 5%;
+}
+
+.aside__project a {
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: #01676b;
+  font-weight: 600;
+}
+
+.aside__project a:hover {
+  color: #ca2e55;
+  transition-duration: 1s;
+}
+
 
 /*Contact*/
 
