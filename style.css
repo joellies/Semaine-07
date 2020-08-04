@@ -292,7 +292,6 @@ h2.chapo {
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 7vw;
-
   margin-bottom: 5vw;
 }
 
@@ -675,6 +674,7 @@ h2.chapo {
   justify-content: space-between;
   align-items: center;
   margin-left: 5vw;
+  margin-bottom: 5vw;
   width: 85%;
 }
 
@@ -721,7 +721,7 @@ h2.chapo {
 .projectOne__btn a {
   position: relative;
   top: -19vw;
-  left: 14vw;
+  left: 13vw;
   color: white;
   font-size: 1.2vw;
   padding: 1vw;
@@ -844,6 +844,22 @@ h2.chapo {
 
 /*Page project.html*/
 
+body .projects {
+  width: 100%;
+  max-width: 1480px;
+  top: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
+  font-family: Montserrat, sans-serif;
+  color: #0c2829;
+}
+
+.o-projectsPage__container {
+  width: 100%;
+  margin-left: 2%;
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}
+
 /*Menu aside home*/
 
 .aside__project {
@@ -865,6 +881,101 @@ h2.chapo {
   transition-duration: 1s;
 }
 
+/*Titres projects page*/
+
+.m-projectOne__intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 7vw;
+  margin-bottom: 4vw;
+}
+
+.projectOne__title h2 {
+  font-size: 3.5vw;
+  font-weight: 600;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+}
+
+.projectOne__subtitle p {
+  font-size: 1.5vw;
+  margin-bottom: 0vw;
+}
+
+/*Project one description*/
+
+.projectOne__text {
+  margin-left: 2vw;
+  color: #0c2829;
+}
+
+.projectOne__description {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  text-align: left;
+}
+
+.projectOne__description p {
+  font-size: 1.2vw;
+  margin: 0.7vw;
+}
+
+.encadre {
+  border-bottom: solid #f9cb40 3px;
+  padding: 0;
+  width: 16vw;
+  text-align: left;
+}
+
+.lighter {
+  color: #267f82;
+}
+/*Project one images*/
+
+.o-projectOne__block {
+  margin-left: 5vw;
+}
+
+.projectOne__images img {
+  width: 60%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left: 15vw;
+}
+
+/*Project Two portfiolio*/
+
+#o-projectTwo {
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 3%;
+  margin-top: 8vw;
+  margin-bottom: 5vw;
+}
+
+.m-projectTwo__intro {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5vw;
+}
+
+.projectTwo__title h2 {
+  font-size: 3.5vw;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.projectTwo__subtitle p {
+  font-size: 1.5vw;
+  margin-bottom: 0vw;
+  text-align: right;
+}
 
 /*Contact*/
 
