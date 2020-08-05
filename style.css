@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   font-weight: 600;
 }
 p {
@@ -828,7 +828,7 @@ h2.chapo {
 .projectThree__btn a {
   position: relative;
   top: -18.5vw;
-  left: 14vw;
+  left: 11vw;
   color: white;
   font-size: 1.2vw;
   padding: 1vw;
@@ -847,6 +847,7 @@ h2.chapo {
 body .projects {
   width: 100%;
   max-width: 1480px;
+  height: 5400px;
   top: 0;
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
   font-family: Montserrat, sans-serif;
@@ -948,7 +949,7 @@ body .projects {
 /*Project Two portfiolio*/
 
 #o-projectTwo {
-  width: 100%;
+  width: 90%;
   margin-left: 2%;
   margin-right: 3%;
   margin-top: 8vw;
@@ -956,7 +957,7 @@ body .projects {
 }
 
 .m-projectTwo__intro {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -975,6 +976,31 @@ body .projects {
   font-size: 1.5vw;
   margin-bottom: 0vw;
   text-align: right;
+}
+
+.projectTwo__text {
+  text-align: right;
+}
+
+.o-projectTwo__description {
+  font-size: 1.2vw;
+  margin: 0.7vw;
+  margin-bottom: 3vw;
+  display: grid;
+  justify-content: flex-end;
+}
+
+.o-projectTwo__description div {
+  text-align: right;
+}
+
+/*Images project two*/
+
+.projectTwo__images img {
+  width: 65%;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  margin-left: 15vw;
 }
 
 /*Contact*/
