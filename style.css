@@ -6,7 +6,7 @@ html {
 
 body {
   width: 100%;
-  max-width: 1480px;
+
   height: 6400px;
   top: 0;
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
@@ -80,7 +80,7 @@ header {
 
 /*Menu contact landing*/
 
-#m-contactMenu__landing {
+.m-contactMenu__landing {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -127,7 +127,7 @@ header {
 }
 
 .landing__contactBtn.transparent {
-  background-color: blue;
+  opacity: 0.3;
   z-index: -10;
 }
 

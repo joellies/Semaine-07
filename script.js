@@ -1,9 +1,11 @@
-let element = document.getElementById('m-landing__contactBtn');
-
+let element = document.getElementsByName('landing__contactBtn');
+console.log(element);
 let changeBackground = window.addEventListener('scroll', () => {
-  if (window.scrollY > 150) {
-    element.classList.add('transparent');
-  } else {
-    element.classList.remove('transparent');
-  }
+  element.forEach(el => {
+    if (window.scrollY > 750) {
+      el.classList.add('transparent');
+    } else {
+      el.classList.remove('transparent');
+    }
+  });
 });
