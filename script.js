@@ -1,4 +1,4 @@
-let element = document.getElementsByName('landing__contactBtn');
+let element = document.getElementsByName('landing__headerBtn');
 console.log(element);
 let changeBackground = window.addEventListener('scroll', () => {
   element.forEach(el => {
