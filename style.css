@@ -1108,12 +1108,16 @@ input {
   border-color: transparent;
   height: 2.5vw;
   width: 17vw;
+  color: #0c2829;
+  font-family: Montserrat, sans serif;
 }
 
 textarea {
   background: #ffffff;
   border-color: transparent;
   border-radius: 1px 25px 25px 25px;
+  color: #0c2829;
+  font-family: Montserrat, sans serif;
 }
 
 .btn {
@@ -1134,6 +1138,15 @@ button {
   width: 10vw;
   font-size: 1.1vw;
   font-weight: 600;
+}
+
+button:hover {
+  background: linear-gradient(
+    140deg,
+    rgba(202, 46, 85, 0.45) 0%,
+    rgba(1, 103, 107, 0.76) 100%
+  );
+  transition-duration: 1s;
 }
 
 /*Footer*/
