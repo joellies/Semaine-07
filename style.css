@@ -6,7 +6,6 @@ html {
 
 body {
   width: 100%;
-  height: 7400px;
   top: 0;
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
   font-family: Montserrat, sans-serif;
@@ -45,10 +44,6 @@ p {
 }
 
 /*Main container*/
-
-section {
-  border: solid 1px black;
-}
 
 .o-landingContainer {
   display: flex;
@@ -91,7 +86,7 @@ header {
   align-content: center;
   flex-wrap: wrap;
   position: fixed;
-  width: 95vw;
+  width: 100vw;
   z-index: -20;
 }
 
@@ -528,7 +523,7 @@ h2.chapo {
 .o-softSkills__container {
   width: 100%;
   margin-left: 3%;
-  margin-top: 5vw;
+  margin-top: 10vw;
   margin-bottom: 5vw;
 }
 
@@ -565,9 +560,8 @@ h2.chapo {
 /*Image left*/
 
 .o-softSkills__image {
-  margin-left: 2vw;
   margin-top: 5vw;
-  width: 30%;
+  width: 45%;
 }
 
 /*Bubles right*/
@@ -581,22 +575,22 @@ h2.chapo {
 .m-curiosityBubble {
   z-index: -3;
   position: absolute;
-  top: 220vw;
-  left: 56vw;
+  top: 222vw;
+  left: 55vw;
   z-index: -5;
 }
 
 .m-curiosityBubble h3 {
   position: relative;
   top: -10vw;
-  left: 3vw;
+  left: 4vw;
 }
 
 .m-senseResponsabilityBuble {
   z-index: -3;
   position: absolute;
   top: 230vw;
-  left: 78vw;
+  left: 75vw;
   z-index: -5;
 }
 
@@ -605,13 +599,13 @@ h2.chapo {
   text-align: center;
   position: relative;
   top: -11vw;
-  left: 2vw;
+  left: 2.5vw;
 }
 
 .m-activeListeningBubble {
   z-index: -3;
   position: absolute;
-  top: 250vw;
+  top: 249vw;
   left: 75vw;
   z-index: -5;
 }
@@ -620,15 +614,15 @@ h2.chapo {
   width: 50%;
   text-align: center;
   position: relative;
-  top: -11.5vw;
-  left: 3vw;
+  top: -12vw;
+  left: 3.5vw;
 }
 
 .m-empathyBuble {
   z-index: -3;
   position: absolute;
-  top: 240vw;
-  left: 56vw;
+  top: 242vw;
+  left: 57vw;
   z-index: -5;
 }
 
@@ -637,7 +631,7 @@ h2.chapo {
   text-align: center;
   position: relative;
   top: -10vw;
-  left: 2.5vw;
+  left: 3vw;
 }
 
 /*Projects*/
@@ -648,7 +642,8 @@ h2.chapo {
   width: 100%;
   margin-left: 3%;
   margin-right: 2%;
-  margin-top: 8vw;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
 }
 
 /*Titres*/
@@ -684,9 +679,9 @@ h2.chapo {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 5vw;
+  margin-left: 4vw;
   margin-bottom: 10vw;
-  width: 85%;
+  width: 90%;
 }
 
 .o-projects__block div {
@@ -788,7 +783,7 @@ h2.chapo {
 .projectTwo__btn a {
   position: relative;
   top: -19vw;
-  left: 14vw;
+  left: 13vw;
   color: white;
   font-size: 1.2vw;
   padding: 1vw;
@@ -838,8 +833,8 @@ h2.chapo {
 
 .projectThree__btn a {
   position: relative;
-  top: -18.5vw;
-  left: 11vw;
+  top: -19vw;
+  left: 12vw;
   color: white;
   font-size: 1.2vw;
   padding: 1vw;
@@ -1022,8 +1017,8 @@ body .projects {
   width: 100%;
   margin-left: 3%;
   margin-right: 2%;
-  margin-top: 8vw;
-  margin-bottom: 2vw;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
 /*Intro*/
@@ -1061,7 +1056,7 @@ body .projects {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 50%;
+  width: 54%;
   margin-top: 5vw;
   margin-left: 7vw;
 }
@@ -1144,5 +1139,26 @@ button {
 /*Footer*/
 
 footer {
-  height: 4%;
+  margin-top: 3vw;
+  height: 17vw;
+}
+
+.informations {
+  padding: 4vw;
+}
+
+.informations p {
+  font-size: 1vw;
+  line-height: 60%;
+  text-align: center;
+}
+
+.socialNetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialNetworks a {
+  text-decoration: none;
+  padding: 0.2vw;
 }
