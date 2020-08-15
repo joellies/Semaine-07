@@ -1067,6 +1067,7 @@ body .projects {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 3vw;
+  align-items: center;
   width: 67%;
 }
 
@@ -1076,6 +1077,7 @@ body .projects {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 3vw;
+  align-items: center;
   width: 67%;
 }
 
@@ -1085,6 +1087,7 @@ body .projects {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 3vw;
+  align-items: center;
   width: 67%;
 }
 
