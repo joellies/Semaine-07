@@ -10,6 +10,7 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #fbeff3 100%, #efbdcf 100%);
   font-family: Montserrat, sans-serif;
   color: #0c2829;
+  overflow-x: hidden;
 }
 
 h1,
